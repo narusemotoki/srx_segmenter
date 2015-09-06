@@ -11,4 +11,4 @@ before_script:
   - flake8 --max-line-length=99 .
 
 script:
-  - nosetests --rednose --with-coverage --cover-package exlogging
+  - nosetests --rednose --with-coverage --cover-package srx_segmenter
