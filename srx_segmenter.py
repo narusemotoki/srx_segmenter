@@ -94,10 +94,10 @@ def parse(srx_filepath: str) -> Dict[str, Dict[str, List[Tuple[str, Optional[str
             rule_holder = current_rule['breaks'] if is_break else current_rule['non_breaks']
 
             beforebreak = rule.find('ns:beforebreak', namespaces=namespaces)
-            beforebreak_text = None if beforebreak is None else beforebreak.text
+            beforebreak_text = '' if beforebreak.text is None else beforebreak.text
 
             afterbreak = rule.find('ns:afterbreak', namespaces=namespaces)
-            afterbreak_text = None if afterbreak is None else afterbreak.text
+            afterbreak_text = '' if afterbreak.text is None else afterbreak.text
 
             rule_holder.append((beforebreak_text, afterbreak_text))
 
