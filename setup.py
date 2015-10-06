@@ -7,7 +7,7 @@ def readme():
 
 setuptools.setup(
     name='srx_segmenter',
-    version='0.0.1',
+    version='0.0.2',
     packages=['.'],
     description="Segment text with SRX",
     long_descriptiondescription=readme(),
